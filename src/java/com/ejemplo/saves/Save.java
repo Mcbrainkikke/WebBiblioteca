@@ -24,7 +24,7 @@ public class Save {
 			
 			session.beginTransaction();
 			
-			Categorias categoria = new Categorias("Prueba_dos");
+			Categorias categoria = new Categorias("Prueba_video");
 			session.save(categoria);
 			
 			session.getTransaction().commit();

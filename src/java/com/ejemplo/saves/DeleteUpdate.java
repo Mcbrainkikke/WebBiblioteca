@@ -24,18 +24,18 @@ public class DeleteUpdate {
 			session.beginTransaction();
 			
 			//----metodo para actualizar----
-			Categorias per = session.get(Categorias.class, 4);
-			per.setNombre("Medicina");
+			//Categorias per = session.get(Categorias.class, 8);
+			//per.setNombre("Prueba_videos");
 			
 			//metodo para actualizar por comando SQL
-			session.createQuery("update Categorias c set c.nombre = 'Prueba_uno' where c.nombre = 'Pruebauno' ").executeUpdate();
+			//session.createQuery("update Categorias c set c.nombre = 'Prueba_dos' where c.nombre = 'Prueba_doss' ").executeUpdate();
 			
 			
 			//----metodo para eliminar----
-			session.delete(per);
+			//session.delete(per);
 			
 			//metodo para eliminar por comando SQL
-			session.createQuery("delete from Categorias c where c.nombre = 'Prueba_dos' ").executeUpdate();
+			session.createQuery("delete from Categorias c where c.nombre = 'Prueba_videos' ").executeUpdate();
 			
 			
 			session.getTransaction().commit();
